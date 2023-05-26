@@ -1,0 +1,138 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfucud63tosec"]
+
+[ext_resource type="Script" path="res://Main_scene.gd" id="1_rahi1"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_rahi1")
+metadata/_edit_horizontal_guides_ = [-40.0, 0.0]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 512.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 66
+text = "Good Morning"
+vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Label"]
+
+[node name="1" type="Button" parent="." groups=["buttons"]]
+offset_top = 192.0
+offset_right = 128.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "1"
+
+[node name="4" type="Button" parent="." groups=["buttons"]]
+offset_top = 320.0
+offset_right = 128.0
+offset_bottom = 448.0
+text = "4"
+
+[node name="7" type="Button" parent="." groups=["buttons"]]
+offset_top = 448.0
+offset_right = 128.0
+offset_bottom = 576.0
+text = "7"
+
+[node name="-" type="Button" parent="." groups=["buttons"]]
+offset_top = 576.0
+offset_right = 128.0
+offset_bottom = 704.0
+rotation = 0.00484768
+text = "-"
+
+[node name="2" type="Button" parent="." groups=["buttons"]]
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 256.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "2"
+
+[node name="5" type="Button" parent="." groups=["buttons"]]
+offset_left = 128.0
+offset_top = 320.0
+offset_right = 256.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "5"
+
+[node name="8" type="Button" parent="." groups=["buttons"]]
+offset_left = 128.0
+offset_top = 448.0
+offset_right = 256.0
+offset_bottom = 576.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "8"
+
+[node name="0" type="Button" parent="." groups=["buttons"]]
+offset_left = 128.0
+offset_top = 576.0
+offset_right = 256.0
+offset_bottom = 704.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "0"
+
+[node name="3" type="Button" parent="." groups=["buttons"]]
+offset_left = 256.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "3"
+
+[node name="6" type="Button" parent="." groups=["buttons"]]
+offset_left = 256.0
+offset_top = 320.0
+offset_right = 384.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "6"
+
+[node name="9" type="Button" parent="." groups=["buttons"]]
+offset_left = 256.0
+offset_top = 448.0
+offset_right = 384.0
+offset_bottom = 576.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "9"
+
+[node name="+" type="Button" parent="." groups=["buttons"]]
+offset_left = 256.0
+offset_top = 576.0
+offset_right = 384.0
+offset_bottom = 704.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "+"
+
+[node name="*" type="Button" parent="." groups=["buttons"]]
+offset_left = 384.0
+offset_top = 192.0
+offset_right = 512.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "X"
+
+[node name="dividsion" type="Button" parent="." groups=["buttons"]]
+offset_left = 384.0
+offset_top = 320.0
+offset_right = 512.0
+offset_bottom = 448.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "/"
+
+[node name="ce" type="Button" parent="." groups=["buttons"]]
+offset_left = 384.0
+offset_top = 448.0
+offset_right = 512.0
+offset_bottom = 576.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "CE"
+
+[node name="ME" type="Button" parent="." groups=["buttons"]]
+offset_left = 384.0
+offset_top = 576.0
+offset_right = 512.0
+offset_bottom = 704.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "="
