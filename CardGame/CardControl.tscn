@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://i28kowsshkp6"]
+
+[ext_resource type="Script" path="res://CardControl.gd" id="1_c4ise"]
+[ext_resource type="PackedScene" uid="uid://bkt5rt48150pq" path="res://SpriteCard.tscn" id="2_vsjeg"]
+
+[node name="Control" type="Control"]
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1043.0
+offset_bottom = -494.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c4ise")
+
+[node name="SpriteCard" parent="." instance=ExtResource("2_vsjeg")]
+position = Vector2(48, 42)
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

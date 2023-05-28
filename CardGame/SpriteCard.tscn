@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkt5rt48150pq"]
+
+[ext_resource type="Script" path="res://Card.gd" id="1_t6shk"]
+
+[sub_resource type="Animation" id="Animation_3572c"]
+resource_name = "CardFlip"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.5708, 3.14159, 4.71239, 6.28319]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:skew")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2, 3, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.785398, -1.56905, -0.785398, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ti4ke"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_71yn1"]
+_data = {
+"CardFlip": SubResource("Animation_3572c"),
+"RESET": SubResource("Animation_ti4ke")
+}
+
+[node name="SpriteCard" type="Sprite2D"]
+script = ExtResource("1_t6shk")
+
+[node name="FlipAnimation" type="AnimationPlayer" parent="."]
+speed_scale = 2.0
+libraries = {
+"": SubResource("AnimationLibrary_71yn1")
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="animation_started" from="FlipAnimation" to="." method="_on_flip_animation_animation_started"]
+[connection signal="timeout" from="Timer" to="." method="change_the_texture"]

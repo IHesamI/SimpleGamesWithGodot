@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://5a6egpooxdk"]
+
+[ext_resource type="Script" path="res://ControlsConainer.gd" id="1_qikee"]
+[ext_resource type="PackedScene" uid="uid://i28kowsshkp6" path="res://CardControl.tscn" id="2_hpnmf"]
+
+[node name="PanelContainer" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qikee")
+
+[node name="Control" parent="." instance=ExtResource("2_hpnmf")]
+layout_mode = 2

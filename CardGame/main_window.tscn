@@ -1,0 +1,77 @@
+[gd_scene load_steps=3 format=3 uid="uid://w0oj0i5exdil"]
+
+[ext_resource type="Script" path="res://main_window.gd" id="1_hi0cu"]
+[ext_resource type="PackedScene" uid="uid://i28kowsshkp6" path="res://CardControl.tscn" id="2_424n5"]
+
+[node name="MainWindow" type="Node2D"]
+position = Vector2(5, -14)
+scale = Vector2(0.027, 1)
+script = ExtResource("1_hi0cu")
+
+[node name="Control" parent="." instance=ExtResource("2_424n5")]
+layout_direction = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 288.0
+offset_top = 184.0
+offset_right = 288.0
+offset_bottom = 184.0
+grow_horizontal = 1
+grow_vertical = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control2" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 696.0
+offset_top = 152.0
+offset_right = 696.0
+offset_bottom = 152.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Control3" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 880.0
+offset_top = 368.0
+offset_right = 880.0
+offset_bottom = 368.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Control4" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 224.0
+offset_top = 552.0
+offset_right = 224.0
+offset_bottom = 552.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Control5" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 104.0
+offset_top = 248.0
+offset_right = 104.0
+offset_bottom = 248.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Control6" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 1176.0
+offset_top = 104.0
+offset_right = 1176.0
+offset_bottom = 104.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Control7" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 1112.0
+offset_top = 616.0
+offset_right = 1112.0
+offset_bottom = 616.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Control8" parent="." instance=ExtResource("2_424n5")]
+anchors_preset = 15
+offset_left = 1176.0
+offset_top = 264.0
+offset_right = 1176.0
+offset_bottom = 264.0
+metadata/_edit_use_anchors_ = true
