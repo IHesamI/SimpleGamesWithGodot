@@ -3,13 +3,78 @@
 [ext_resource type="Script" path="res://ControlsConainer.gd" id="1_qikee"]
 [ext_resource type="PackedScene" uid="uid://i28kowsshkp6" path="res://CardControl.tscn" id="2_hpnmf"]
 
-[node name="PanelContainer" type="PanelContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="ControlContainer" type="CanvasLayer"]
 script = ExtResource("1_qikee")
 
 [node name="Control" parent="." instance=ExtResource("2_hpnmf")]
-layout_mode = 2
+offset_left = 64.0
+offset_top = 16.0
+offset_right = -1043.0
+offset_bottom = -539.0
+metadata/id = 1
+
+[node name="Control2" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 320.0
+offset_top = 16.0
+offset_right = -787.0
+offset_bottom = -539.0
+
+[node name="Control3" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 576.0
+offset_top = 16.0
+offset_right = -531.0
+offset_bottom = -539.0
+
+[node name="Control4" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 832.0
+offset_top = 16.0
+offset_right = -275.0
+offset_bottom = -539.0
+
+[node name="Control5" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 64.0
+offset_top = 272.0
+offset_right = -1043.0
+offset_bottom = -283.0
+
+[node name="Control6" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 320.0
+offset_top = 272.0
+offset_right = -787.0
+offset_bottom = -283.0
+
+[node name="Control7" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 576.0
+offset_top = 272.0
+offset_right = -531.0
+offset_bottom = -283.0
+
+[node name="Control8" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 832.0
+offset_top = 272.0
+offset_right = -275.0
+offset_bottom = -283.0
+
+[node name="Control9" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 64.0
+offset_top = 528.0
+offset_right = -1043.0
+offset_bottom = -27.0
+
+[node name="Control10" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 320.0
+offset_top = 528.0
+offset_right = -787.0
+offset_bottom = -27.0
+
+[node name="Control11" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 576.0
+offset_top = 528.0
+offset_right = -531.0
+offset_bottom = -27.0
+
+[node name="Control12" parent="." instance=ExtResource("2_hpnmf")]
+offset_left = 832.0
+offset_top = 528.0
+offset_right = -275.0
+offset_bottom = -27.0

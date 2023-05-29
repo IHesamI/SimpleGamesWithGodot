@@ -3,14 +3,20 @@ extends Sprite2D
 @export var back_texture:Image
 var is_front:bool 
 
+func ImageImplementions():
+	_ready()
+
 func _ready() -> void:
-	front_texture=setTheBackTexture(front_texture,'res://Assets/images/android-webview-beta_256x256.png')
+	pass
+func set_texutres(url):
+	front_texture=setTheBackTexture(front_texture,url)
 	is_front=true
 
 	await get_tree().create_timer(1).timeout
 
 	back_texture=setTheBackTexture(back_texture,'res://Assets/android-webview-canary_256x256.png')
 	is_front=false
+
 
 func setTheBackTexture(imagenode,add):
 	imagenode=Image.new()

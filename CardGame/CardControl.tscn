@@ -9,14 +9,17 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1043.0
-offset_bottom = -494.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -1037.0
+offset_bottom = -488.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_c4ise")
+metadata/id = 0
 
 [node name="SpriteCard" parent="." instance=ExtResource("2_vsjeg")]
-position = Vector2(48, 42)
+position = Vector2(116, 104)
 
 [node name="Timer" type="Timer" parent="."]
 
