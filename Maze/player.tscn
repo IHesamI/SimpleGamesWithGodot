@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://1028kckfjdo0"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_6wjt3"]
+[ext_resource type="PackedScene" uid="uid://bdtisd1gmhi3g" path="res://player_animation.tscn" id="1_8jth7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_662s8"]
+radius = 19.4551
+
+[sub_resource type="Gradient" id="Gradient_cw5q2"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.726496)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_of76w"]
+gradient = SubResource("Gradient_cw5q2")
+fill = 1
+fill_from = Vector2(0.487805, 0.454268)
+
+[node name="player" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_6wjt3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0)
+shape = SubResource("CircleShape2D_662s8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+
+[node name="PlayerAnimation" parent="." instance=ExtResource("1_8jth7")]
+position = Vector2(-6.125, 0.875)
+scale = Vector2(0.574176, 0.498062)
+animation = &"Idle"
+frame_progress = 0.321391
+speed_scale = 1.5
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-2.38419e-07, 2)
+scale = Vector2(6.04688, 6.04688)
+texture = SubResource("GradientTexture2D_of76w")
